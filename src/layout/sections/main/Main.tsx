@@ -9,9 +9,9 @@ export const Main = () => {
         <StyledMain>
             <FlexWrapper align={'center'} justify={'space-around'}>
                 <div>
-                    <span>Приветствую</span>
-                    <Name>Меня зовут Тукарев Николай</Name>
+                    <Greeting>Приветствую, я </Greeting>
                     <MainTitle>React frontend developer </MainTitle>
+                    <Name>Меня зовут Тукарев Николай, разработкой занимаюсь с 2022 года</Name>
                 </div>
 
                 <Photo src={photo} alt="photo"/>
@@ -35,6 +35,10 @@ const MainTitle = styled.h1`
 
 `
 
-const Name = styled.h2`
+const Greeting = styled.h3`
+
+`
+
+const Name = styled.span`
 
 `
