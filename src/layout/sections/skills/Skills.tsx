@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import {FlexWrapper} from '../../components/FlexWrapper';
+import {FlexWrapper} from '../../../components/FlexWrapper';
 import {Skill} from './skill/Skill';
-import image from './../../assets/images/skills.webp'
-import {SectionTitle} from '../../components/SectionTitle';
+import image from '../../../assets/images/skills.webp'
+import {SectionTitle} from '../../../components/SectionTitle';
 
 export const Skills = () => {
     return (
