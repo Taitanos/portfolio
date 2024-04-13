@@ -1,5 +1,5 @@
 
-export const Theme = {
+export const theme = {
     color: {
         primaryBg: 'linear-gradient(90deg, rgba(79, 71, 200, 0.4), rgba(29, 213, 208, 0.22)',
         secondaryBg: '#343D68',
