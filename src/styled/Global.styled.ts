@@ -20,6 +20,10 @@ export const GlobalStyled = createGlobalStyle`
     line-height: 1.2;
   }
   
+  section {
+    padding: 40px 0;
+  }
+  
   a {
     text-decoration: none;
   }
