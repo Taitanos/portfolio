@@ -46,7 +46,7 @@ const Mask = styled.span`
   height: 50%;
   overflow-y: hidden;
   //outline: 1px solid red;
-  color: ${theme.color.fontSkills};
+  color: ${theme.color.fontText};
 
   & + & {
     top: 50%;
@@ -65,7 +65,7 @@ const ListItem = styled.li`
     content: "";
     display: inline-block;
     height: 2px;
-    background-color: ${theme.color.fontSkills};
+    background-color: ${theme.color.fontText};
     
     position: absolute;
     top: 50%;
