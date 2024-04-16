@@ -28,7 +28,7 @@ export const Main = () => {
 
 const StyledMain = styled.div`
   min-height: 100vh;
-  background-color: ${theme.color.primaryBg};
+  background-color: ${theme.colors.primaryBg};
   display: flex;
 
 `
@@ -41,7 +41,7 @@ const PhotoWrapper = styled.div`
     content: '';
     width: 360px;
     height: 470px;
-    border: 5px solid ${theme.color.fontGreeting};
+    border: 5px solid ${theme.colors.fontGreeting};
 
     position: absolute;
     top: -24px;
@@ -62,7 +62,7 @@ const Greeting = styled.h2`
   font-size: 32px;
   letter-spacing: 0.01em;
   text-transform: capitalize;
-  color: ${theme.color.fontGreeting}
+  color: ${theme.colors.fontGreeting}
 `
 
 const MainTitle = styled.h1`
@@ -70,14 +70,14 @@ const MainTitle = styled.h1`
   font-size: 48px;
   letter-spacing: 0.01em;
   text-transform: capitalize;
-  color: ${theme.color.fontGreeting};
+  color: ${theme.colors.fontGreeting};
   margin: 10px 0;
 `
 
 const Name = styled.h2`
   font-weight: 400;
   font-size: 18px;
-  color: ${theme.color.fontText};
+  color: ${theme.colors.fontText};
 
   span {
     position: relative;
@@ -88,7 +88,7 @@ const Name = styled.h2`
       display: inline-block;
       width: 100%;
       height: 5px;
-      background-color: ${theme.color.fontGreeting};
+      background-color: ${theme.colors.fontGreeting};
 
       position: absolute;
       bottom: 0;
