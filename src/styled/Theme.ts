@@ -1,9 +1,9 @@
-
 export const theme = {
-    color: {
+    colors: {
         primaryBg: '#f7f6fb',
         secondaryBg: '#343D68',
-        HeaderBg: '#FCFCFC',
+        projectBg: '#262C4D',
+        headerBg: '#FCFCFC',
 
         fontGreeting: '#343d68',
         fontTitle: '#E84949',

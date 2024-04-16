@@ -46,7 +46,7 @@ const Mask = styled.span`
   height: 50%;
   overflow-y: hidden;
   //outline: 1px solid red;
-  color: ${theme.color.fontText};
+  color: ${theme.colors.fontText};
 
   & + & {
     top: 50%;
@@ -65,7 +65,7 @@ const ListItem = styled.li`
     content: "";
     display: inline-block;
     height: 2px;
-    background-color: ${theme.color.fontText};
+    background-color: ${theme.colors.fontText};
     
     position: absolute;
     top: 50%;
@@ -84,7 +84,7 @@ const ListItem = styled.li`
     
     ${Mask} {
       transform: skewX(7deg) translateX(2px);
-      color: ${theme.color.fontTitle};
+      color: ${theme.colors.fontTitle};
 
       & + ${Mask} {
         transform: skewX(7deg) translateX(-2px);

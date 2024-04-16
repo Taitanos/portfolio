@@ -38,9 +38,10 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  background-color: ${theme.color.primaryBg};
+  background-color: ${theme.colors.primaryBg};
   display: flex;
   flex-direction: column;
+  align-items: center;
 `
 
 const Description = styled.span`
@@ -48,7 +49,7 @@ const Description = styled.span`
   font-weight: 400;
   font-size: 24px;
   margin-bottom: 30px;
-  color: ${theme.color.fontDescription};
+  color: ${theme.colors.fontDescription};
 `
 
 const Picture = styled.img`

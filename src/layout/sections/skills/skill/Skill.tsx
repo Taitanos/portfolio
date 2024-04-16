@@ -48,11 +48,11 @@ const IconWrapper = styled.div`
   }
 `
 
-const SkillTitle = styled.p`
+const SkillTitle = styled.h3`
   font-family: "Be Vietnam", sans-serif;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
-  color: ${theme.color.fontText};
+  color: ${theme.colors.fontText};
   margin: 25px 0 5px;
 `
