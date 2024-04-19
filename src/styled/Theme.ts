@@ -4,6 +4,7 @@ export const theme = {
         secondaryBg: '#343D68',
         projectBg: '#262C4D',
         headerBg: '#FCFCFC',
+        borderBg: '#838383',
 
         fontGreeting: '#343d68',
         fontTitle: '#E84949',
