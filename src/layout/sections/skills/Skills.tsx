@@ -10,8 +10,8 @@ import {Container} from '../../../components/Container';
 export const Skills = () => {
     return (
         <StyledSkills>
-            <SectionTitle>Skills</SectionTitle>
             <Container>
+                <SectionTitle>Навыки</SectionTitle>
                 <FlexWrapper align={'center'}>
                     <FlexWrapper direction={'column'}>
                         <Description>Имею опыт работы со следующими технологиями:</Description>

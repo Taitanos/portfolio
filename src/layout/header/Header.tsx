@@ -5,7 +5,7 @@ import {Menu} from '../../components/menu/Menu';
 import {Container} from '../../components/Container';
 import { FlexWrapper } from '../../components/FlexWrapper';
 
-const items = ["Home", 'Skills', 'Project', 'Contact me']
+const items = ["Главная", 'Навыки', 'Проекты', 'Связаться']
 
 export const Header = () => {
     return (

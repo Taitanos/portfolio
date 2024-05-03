@@ -10,8 +10,8 @@ import {theme} from '../../../styled/Theme';
 export const Projects = () => {
     return (
         <StyledProjects>
-            <SectionTitle>Projects</SectionTitle>
             <Container>
+                <SectionTitle>Проекты</SectionTitle>
                 <FlexWrapper justify={'space-around'} wrap={'wrap'} align={'flex-start'}>
                     <Project title={'Social Network'}
                              text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}

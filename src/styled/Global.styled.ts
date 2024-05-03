@@ -1,5 +1,4 @@
 import {createGlobalStyle} from 'styled-components';
-import {theme} from './Theme';
 
 export const GlobalStyled = createGlobalStyle`
   *,
@@ -27,6 +26,7 @@ export const GlobalStyled = createGlobalStyle`
   
   a {
     text-decoration: none;
+    cursor: pointer;
   }
   
   ul {
@@ -36,9 +36,6 @@ export const GlobalStyled = createGlobalStyle`
   button {
     background-color: unset;
     border: none;
-    color: ${theme.colors.fontTextProject};
-    font-weight: 500;
-    font-size: 14px;
-    text-align: center;
+    cursor: pointer;
   }
 `

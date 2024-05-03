@@ -34,7 +34,8 @@ const StyledMenu = styled.nav`
 const Link = styled.a`
   font-family: "Be Vietnam", sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
+  font-style: italic;
   color: transparent;
 `
 
@@ -46,7 +47,7 @@ const Mask = styled.span`
   height: 50%;
   overflow-y: hidden;
   //outline: 1px solid red;
-  color: ${theme.colors.fontText};
+  color: ${theme.colors.fontTextDark};
 
   & + & {
     top: 50%;
@@ -65,7 +66,7 @@ const ListItem = styled.li`
     content: "";
     display: inline-block;
     height: 2px;
-    background-color: ${theme.colors.fontText};
+    background-color: ${theme.colors.fontTextDark};
     
     position: absolute;
     top: 50%;

@@ -10,14 +10,14 @@ import {theme} from '../../../styled/Theme';
 export const Contacts = () => {
     return (
         <StyledContacts>
-            <SectionTitle>Contact me</SectionTitle>
             <Container>
+                <SectionTitle>Связаться</SectionTitle>
                 <FlexWrapper justify={'space-around'}>
                     <Picture src={image} alt={'contact'}/>
                     <StyledForm>
-                        <Field placeholder={'Enter email address'}/>
-                        <Field placeholder={'Enter message...'} as={'textarea'}/>
-                        <Button type={'submit'}>Send Message</Button>
+                        <Field placeholder={'Ваша почта'}/>
+                        <Field placeholder={'Ваш текст...'} as={'textarea'}/>
+                        <Button type={'submit'}>Отправить</Button>
                     </StyledForm>
                 </FlexWrapper>
             </Container>

@@ -46,11 +46,11 @@ const Description = styled.div`
 `
 
 const Title = styled.h3`
-  color: ${theme.colors.fontTextProject};
+  color: ${theme.colors.fontText};
 `
 
 const Text = styled.p`
-  color: ${theme.colors.fontTextProject};
+  color: ${theme.colors.fontText};
   margin: 19px 0;
   line-height: 1.4;
 `
