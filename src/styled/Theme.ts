@@ -12,5 +12,10 @@ export const theme = {
         fontTextDark: 'rgba(0, 0, 0, 0.7)',
         fontText: '#fff',
         fontGit: '#0ACBBF',
-    }
+    },
+
+    media: {
+        tablet: 'screen and (max-width: 768px)',
+        mobile: 'screen and (max-width: 576px)',
+    },
 }
