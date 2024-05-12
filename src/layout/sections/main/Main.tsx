@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from './../../../assets/images/photo.webp'
+import photo from './../../../assets/images/photo1.webp'
 import styled from 'styled-components';
 import {FlexWrapper} from '../../../components/FlexWrapper';
 import {Container} from '../../../components/Container';

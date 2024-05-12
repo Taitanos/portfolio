@@ -9,7 +9,7 @@ export const Button = styled.button`
   width: 200px;
   height: 50px;
   position: relative;
-  color: ${theme.colors.fontGreeting};
+  color: ${theme.colors.fontGit};
   z-index: 0;
 
   &:hover {
@@ -19,6 +19,7 @@ export const Button = styled.button`
       border: 2px solid #fff;
       border-radius: 4px;
       color: ${theme.colors.fontText};
+      background-color: ${theme.colors.fontGreeting};
     }
     color: ${theme.colors.fontText};
   }
@@ -28,7 +29,7 @@ export const Button = styled.button`
     display: inline-block;
     height: 10px;
     width: 50%;
-    background-color: ${theme.colors.fontGreeting};
+    background-color: ${theme.colors.fontGit};
     position: absolute;
     bottom: 0;
     left: 50%;
