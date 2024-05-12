@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {theme} from '../../styled/Theme';
+import {theme} from '../../../styled/Theme';
 
 export const Menu = (props: { menuItems: Array<string> }) => {
     return (
@@ -8,7 +8,7 @@ export const Menu = (props: { menuItems: Array<string> }) => {
             <ul>
                 {props.menuItems.map((item, index) => {
                     return <ListItem key={index}>
-                        <Link href="#">
+                        <Link href="src/layout/header/menu/Menu#">
                             {item}
                             <Mask>
                                 <span>{item}</span>
@@ -28,6 +28,11 @@ const StyledMenu = styled.nav`
   ul {
     display: flex;
     gap: 30px;
+    justify-content: center;
+  }
+  
+  @media ${theme.media.tablet} {
+    display: none;
   }
 `
 
