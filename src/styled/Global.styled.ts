@@ -1,4 +1,5 @@
 import {createGlobalStyle} from 'styled-components';
+import { theme } from './Theme';
 
 export const GlobalStyled = createGlobalStyle`
   *,
@@ -21,7 +22,11 @@ export const GlobalStyled = createGlobalStyle`
   }
   
   section {
-    padding: 40px 0;
+    padding: 100px 0;
+
+    @media ${theme.media.mobile} {
+      padding: 80px 0
+    }
   }
   
   a {

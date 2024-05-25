@@ -11,18 +11,24 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={'center'} justify={'space-between'}>
-                    <FlexWrapper justify={'center'} direction={'column'}>
+                <FlexWrapper align={'center'} justify={'space-between'} wrap={"wrap-reverse"}>
+                    <div>
                         <div>
                             <Name>Приветствую, меня зовут <span>Тукарев Николай</span> и я</Name>
                             <MainTitle>Frontend разработчик</MainTitle>
-                            <Description>Разработкой занимаюсь с 2022 года, я бы описал себя как целеустремленного и трудолюбивого человека с опытом создания SPA с использованием React/Redux/TypeScript. Мне нравится создавать вещи, с которыми пользователям интересно взаимодействовать. Как разработчик, я стремлюсь создавать простые, понятные и красивые решения для интернета. Обычно я предпочитаю тратить свободное время на улучшение и изучение новых технологий, а также активно занимаюсь спортом для поддержания себя в форме. Готов рассмотреть проектную работу и полную занятость. </Description>
-
+                            <Description>Разработкой занимаюсь с 2022 года, я бы описал себя как целеустремленного и
+                                трудолюбивого человека с опытом создания SPA с использованием React/Redux/TypeScript.
+                                Мне нравится создавать вещи, с которыми пользователям интересно взаимодействовать. Как
+                                разработчик, я стремлюсь создавать простые, понятные и красивые решения для интернета.
+                                Обычно я предпочитаю тратить свободное время на улучшение и изучение новых технологий, а
+                                также активно занимаюсь спортом для поддержания себя в форме. Готов рассмотреть
+                                проектную работу и полную занятость.
+                            </Description>
                         </div>
                         <div>
                             <Button>Загрузить CV</Button>
                         </div>
-                    </FlexWrapper>
+                    </div>
 
                     <PhotoWrapper>
                         <Photo src={photo} alt="photo"/>
@@ -33,7 +39,7 @@ export const Main = () => {
     );
 };
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
   min-height: 100vh;
   background-color: ${theme.colors.primaryBg};
   display: flex;

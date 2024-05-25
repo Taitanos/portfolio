@@ -7,7 +7,7 @@ import {theme} from '../../styled/Theme';
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper direction={'column'} align={'center'} gap={'25px'}>
+            <FlexWrapper direction={'column'} align={'center'}>
                 <TextInfo>Мои социальные сети:</TextInfo>
                 <SocialList>
                     <SocialItem>
@@ -27,7 +27,7 @@ export const Footer = () => {
                     </SocialItem>
                 </SocialList>
             </FlexWrapper>
-            <FlexWrapper direction={'column'} gap={'25px'}>
+            <FlexWrapper direction={'column'}>
                 <TextInfo>Больше проектов, над которыми я работал</TextInfo>
                 <FlexWrapper align={'center'}>
                     <Text> на github <a href={'https://github.com/Taitanos'}>@Taitanos</a></Text>

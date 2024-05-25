@@ -19,7 +19,7 @@ export const Button = styled.button`
       border: 2px solid #fff;
       border-radius: 4px;
       color: ${theme.colors.fontText};
-      background-color: ${theme.colors.fontGreeting};
+      background-color: ${theme.colors.fontGit};
     }
     color: ${theme.colors.fontText};
   }

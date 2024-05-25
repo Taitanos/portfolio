@@ -39,7 +39,7 @@ const StyledMenu = styled.nav`
 const Link = styled.a`
   font-family: "Be Vietnam", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   font-style: italic;
   color: transparent;
 `
@@ -51,7 +51,6 @@ const Mask = styled.span`
   display: inline-block;
   height: 50%;
   overflow-y: hidden;
-  //outline: 1px solid red;
   color: ${theme.colors.fontTextDark};
 
   & + & {
@@ -89,11 +88,11 @@ const ListItem = styled.li`
     }
     
     ${Mask} {
-      transform: skewX(7deg) translateX(2px);
+      transform: skewX(5deg) translateX(1px);
       color: ${theme.colors.fontTitle};
 
       & + ${Mask} {
-        transform: skewX(7deg) translateX(-2px);
+        transform: skewX(5deg) translateX(-1px);
       }
     }
   }
