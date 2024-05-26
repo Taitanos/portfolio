@@ -13,7 +13,7 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
                 <ul>
                     {props.menuItems.map((item, index) => {
                         return <ListItem key={index}>
-                            <Link href="src/layout/header/menu/Menu#">
+                            <Link href="src/layout/header/menuOld/Menu#">
                                 {item}
                                 <Mask>
                                     <span>{item}</span>
@@ -53,8 +53,8 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     display: flex;
     justify-content: center;
     align-items: center;
-
   `}
+  
   ul {
     display: flex;
     gap: 30px;
@@ -84,6 +84,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     ${props => props.isOpen && css<{ isOpen: boolean }>`
       background-color: rgba(255, 255, 255, 0);
     `}
+    
     &::before {
       content: '';
       display: block;
@@ -130,7 +131,6 @@ const Mask = styled.span`
   display: inline-block;
   height: 50%;
   overflow-y: hidden;
-  //outline: 1px solid red;
   color: ${theme.colors.fontTextDark};
 
   & + & {
