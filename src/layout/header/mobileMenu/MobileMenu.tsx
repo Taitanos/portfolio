@@ -13,7 +13,7 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
                 <ul>
                     {props.menuItems.map((item, index) => {
                         return <ListItem key={index}>
-                            <Link href="src/layout/header/menuOld/Menu#">
+                            <Link href={''}>
                                 {item}
                                 <Mask>
                                     <span>{item}</span>
@@ -32,7 +32,7 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
 
 const StyledMobileMenu = styled.nav`
   display: none;
-  
+
   @media ${theme.media.tablet} {
     display: block;
   }
@@ -66,11 +66,10 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
-  top: -100px;
-  right: -100px;
   width: 200px;
   height: 200px;
-  z-index: 9999999;
+  top: -100px;
+  right: -100px;
 
   span {
     display: block;
@@ -116,14 +115,6 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   }
 `
 
-const Link = styled.a`
-  font-family: "Be Vietnam", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: italic;
-  color: transparent;
-`
-
 const Mask = styled.span`
   position: absolute;
   top: 0;
@@ -147,7 +138,7 @@ const ListItem = styled.li`
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     display: inline-block;
     height: 2px;
     background-color: ${theme.colors.fontTextDark};
@@ -168,12 +159,20 @@ const ListItem = styled.li`
     }
 
     ${Mask} {
-      transform: skewX(7deg) translateX(2px);
+      transform: skewX(3deg) translateX(2px);
       color: ${theme.colors.fontTitle};
 
       & + ${Mask} {
-        transform: skewX(7deg) translateX(-2px);
+        transform: skewX(3deg) translateX(-2px);
       }
     }
   }
+`
+
+const Link = styled.a`
+  font-family: "Be Vietnam", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  font-style: italic;
+  color: transparent;
 `

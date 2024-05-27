@@ -43,7 +43,7 @@ const StyledMain = styled.section`
   min-height: 100vh;
   background-color: ${theme.colors.primaryBg};
   display: flex;
-  padding-top: 120px;
+  padding-top: 160px;
 `
 
 const PhotoWrapper = styled.div`
