@@ -5,13 +5,14 @@ import {FlexWrapper} from '../../../components/FlexWrapper';
 import {Container} from '../../../components/Container';
 import {theme} from '../../../styled/Theme';
 import {Button} from '../../../components/Button';
+import { font } from '../../../styled/Common';
 
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={'center'} justify={'space-between'} wrap={"wrap-reverse"}>
+                <FlexWrapper align={'center'} justify={'space-around'} wrap={"wrap-reverse"}>
                     <div>
                         <div>
                             <Name>Приветствую, меня зовут <span>Тукарев Николай</span> и я</Name>
@@ -63,8 +64,10 @@ const PhotoWrapper = styled.div`
     z-index: -1;
     
     @media ${theme.media.mobile} {
-      width: 314px;
+      width: 300px;
       height: 414px;
+      top: -17px;
+      left: 20px;
     }
   }
 `
@@ -73,16 +76,16 @@ const Photo = styled.img`
   width: 350px;
   height: 430px;
   object-fit: cover;
+  margin-right: 20px;
   
   @media ${theme.media.mobile} {
-    width: 310px;
-    height: 380px;
+    width: 300px;
+    height: 370px;
   }
 `
 
 const MainTitle = styled.h1`
-  font-weight: 600;
-  font-size: 48px;
+  ${font({weight: 600, Fmax: 48, Fmin: 28})};
   letter-spacing: 0.01em;
   text-transform: capitalize;
   color: ${theme.colors.fontGreeting};
@@ -90,29 +93,25 @@ const MainTitle = styled.h1`
 `
 
 const Description = styled.h2`
-  max-width: 720px;
-  font-weight: 500;
-  font-size: 18px;
+  ${font({weight: 500, Fmax: 18, Fmin: 16})};
+  max-width: 560px;
   text-align: center;
   padding: 15px 25px 15px 0;
   letter-spacing: 0.01em;
   line-height: 2em;
   margin-bottom: 20px;
   color: ${theme.colors.fontDescription};
-  
-  @media ${theme.media.mobile} {
-    max-width: 360px;
-  }
 `
 
 const Name = styled.h2`
-  font-weight: 600;
-  font-size: 24px;
+  ${font({family: "'Be Vietnam Pro', 'sans-serif'", weight: 600, Fmax: 32, Fmin: 22})};
   color: ${theme.colors.fontGreeting};
+  margin-top: 18px;
 
   span {
     position: relative;
     z-index: 0;
+    white-space: nowrap;
 
     &::before {
       content: '';
