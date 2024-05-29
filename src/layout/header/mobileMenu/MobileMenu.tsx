@@ -5,15 +5,15 @@ import {theme} from '../../../styled/Theme';
 export const MobileMenu = (props: { menuItems: Array<string> }) => {
     return (
         <StyledMobileMenu>
-            <BurgerButton isOpen={true}>
+            <BurgerButton isOpen={false}>
                 <span></span>
             </BurgerButton>
 
-            <MobileMenuPopup isOpen={true}>
+            <MobileMenuPopup isOpen={false}>
                 <ul>
                     {props.menuItems.map((item, index) => {
                         return <ListItem key={index}>
-                            <Link href="src/layout/header/menu/Menu#">
+                            <Link href={''}>
                                 {item}
                                 <Mask>
                                     <span>{item}</span>
@@ -32,7 +32,7 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
 
 const StyledMobileMenu = styled.nav`
   display: none;
-  
+
   @media ${theme.media.tablet} {
     display: block;
   }
@@ -53,8 +53,8 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     display: flex;
     justify-content: center;
     align-items: center;
-
   `}
+  
   ul {
     display: flex;
     gap: 30px;
@@ -66,10 +66,10 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
-  top: -100px;
-  right: -100px;
   width: 200px;
   height: 200px;
+  top: -100px;
+  right: -100px;
   z-index: 9999999;
 
   span {
@@ -84,6 +84,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     ${props => props.isOpen && css<{ isOpen: boolean }>`
       background-color: rgba(255, 255, 255, 0);
     `}
+    
     &::before {
       content: '';
       display: block;
@@ -115,14 +116,6 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   }
 `
 
-const Link = styled.a`
-  font-family: "Be Vietnam", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: italic;
-  color: transparent;
-`
-
 const Mask = styled.span`
   position: absolute;
   top: 0;
@@ -130,7 +123,6 @@ const Mask = styled.span`
   display: inline-block;
   height: 50%;
   overflow-y: hidden;
-  //outline: 1px solid red;
   color: ${theme.colors.fontTextDark};
 
   & + & {
@@ -147,7 +139,7 @@ const ListItem = styled.li`
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     display: inline-block;
     height: 2px;
     background-color: ${theme.colors.fontTextDark};
@@ -168,12 +160,20 @@ const ListItem = styled.li`
     }
 
     ${Mask} {
-      transform: skewX(7deg) translateX(2px);
+      transform: skewX(3deg) translateX(2px);
       color: ${theme.colors.fontTitle};
 
       & + ${Mask} {
-        transform: skewX(7deg) translateX(-2px);
+        transform: skewX(3deg) translateX(-2px);
       }
     }
   }
+`
+
+const Link = styled.a`
+  font-family: "Be Vietnam", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  font-style: italic;
+  color: transparent;
 `

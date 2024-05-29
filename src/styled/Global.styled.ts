@@ -1,4 +1,5 @@
 import {createGlobalStyle} from 'styled-components';
+import { theme } from './Theme';
 
 export const GlobalStyled = createGlobalStyle`
   *,
@@ -9,7 +10,6 @@ export const GlobalStyled = createGlobalStyle`
     box-sizing: border-box;
   }
 
-
   body {
     margin: 0;
     font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -18,10 +18,16 @@ export const GlobalStyled = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.2;
+
+    min-width: 360px;
   }
   
   section {
-    padding: 40px 0;
+    padding: 100px 0;
+
+    @media ${theme.media.mobile} {
+      padding: 80px 0
+    }
   }
   
   a {
