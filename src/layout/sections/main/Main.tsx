@@ -5,17 +5,17 @@ import {FlexWrapper} from '../../../components/FlexWrapper';
 import {Container} from '../../../components/Container';
 import {theme} from '../../../styled/Theme';
 import {Button} from '../../../components/Button';
-import { font } from '../../../styled/Common';
+import {font} from '../../../styled/Common';
 
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={'center'} justify={'space-around'} wrap={"wrap-reverse"}>
-                    <div>
+                <FlexWrapper align={'center'} justify={'space-around'} wrap={'wrap-reverse'}>
+                    <InfoWrapper>
                         <div>
-                            <Name>Приветствую, меня зовут <span>Тукарев Николай</span> и я</Name>
+                            <Name>Приветствую, меня зовут <span>Тукарев Николай</span></Name>
                             <MainTitle>Frontend разработчик</MainTitle>
                             <Description>Разработкой занимаюсь с 2022 года, я бы описал себя как целеустремленного и
                                 трудолюбивого человека с опытом создания SPA с использованием React/Redux/TypeScript.
@@ -29,7 +29,7 @@ export const Main = () => {
                         <div>
                             <Button>Загрузить CV</Button>
                         </div>
-                    </div>
+                    </InfoWrapper>
 
                     <PhotoWrapper>
                         <Photo src={photo} alt="photo"/>
@@ -62,7 +62,7 @@ const PhotoWrapper = styled.div`
     left: 24px;
 
     z-index: -1;
-    
+
     @media ${theme.media.mobile} {
       width: 300px;
       height: 414px;
@@ -77,11 +77,17 @@ const Photo = styled.img`
   height: 430px;
   object-fit: cover;
   margin-right: 20px;
-  
+
   @media ${theme.media.mobile} {
     width: 300px;
     height: 370px;
   }
+`
+
+const InfoWrapper = styled.div`
+  text-align: center;
+  max-width: 710px;
+  margin-top: 15px;
 `
 
 const MainTitle = styled.h1`
@@ -94,7 +100,6 @@ const MainTitle = styled.h1`
 
 const Description = styled.h2`
   ${font({weight: 500, Fmax: 18, Fmin: 16})};
-  max-width: 560px;
   text-align: center;
   padding: 15px 25px 15px 0;
   letter-spacing: 0.01em;
@@ -104,7 +109,7 @@ const Description = styled.h2`
 `
 
 const Name = styled.h2`
-  ${font({family: "'Be Vietnam Pro', 'sans-serif'", weight: 600, Fmax: 32, Fmin: 22})};
+  ${font({family: '\'Be Vietnam Pro\', \'sans-serif\'', weight: 600, Fmax: 32, Fmin: 22})};
   color: ${theme.colors.fontGreeting};
   margin-top: 18px;
 

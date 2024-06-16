@@ -12,10 +12,10 @@ export const Skills = () => {
         <StyledSkills>
             <Container>
                 <SectionTitle>Навыки</SectionTitle>
-                <FlexWrapper align={'center'}>
-                    <FlexWrapper direction={'column'}>
+                <FlexWrapper align={'center'} justify={'space-around'} wrap={'wrap-reverse'}>
+                    <SkillsWrapper>
                         <Description>Имею опыт работы со следующими технологиями:</Description>
-                        <FlexWrapper wrap={'wrap'} align={'center'}>
+                        <FlexWrapper wrap={'wrap'} align={'center'} justify={'space-around'} >
                             <Skill iconId={'typeScript'} titleId={'Type Script'}/>
                             <Skill iconId={'react'} titleId={'React'} viewBox={'0 0 40 38'}/>
                             <Skill iconId={'redux'} titleId={'Redux'}/>
@@ -29,7 +29,7 @@ export const Skills = () => {
                             <Skill iconId={'styledComponents'} titleId={'Styled Components'} viewBox={'0 0 32 32'}/>
                             <Skill iconId={'materialUI'} titleId={'Material UI'} viewBox={'0 0 256 204'}/>
                         </FlexWrapper>
-                    </FlexWrapper>
+                    </SkillsWrapper>
                     <Picture src={image} alt={'skills'}/>
                 </FlexWrapper>
             </Container>
@@ -45,6 +45,7 @@ const StyledSkills = styled.section`
 `
 
 const Description = styled.span`
+  display: block;
   font-family: "Be Vietnam", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -52,8 +53,19 @@ const Description = styled.span`
   color: ${theme.colors.fontDescription};
 `
 
+const SkillsWrapper = styled.div`
+  margin-top: 15px;
+  max-width: 600px;
+  flex-direction: column;
+`
+
 const Picture = styled.img`
   max-width: 511px;
   max-height: 414px;
   object-fit: cover;
+  
+  @media ${theme.media.mobile} {
+    width: 313px;
+    height: 250px;
+  }
 `
