@@ -26,7 +26,7 @@ const StyledSkill = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px;
+  width: 160px;
   padding: 15px;
 `
 
