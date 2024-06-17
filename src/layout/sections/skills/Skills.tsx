@@ -65,7 +65,7 @@ const Picture = styled.img`
   object-fit: cover;
   
   @media ${theme.media.mobile} {
-    width: 313px;
-    height: 250px;
+    width: 280px;
+    height: 230px;
   }
 `
