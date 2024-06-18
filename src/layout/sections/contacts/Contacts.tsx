@@ -12,7 +12,7 @@ export const Contacts = () => {
         <StyledContacts>
             <Container>
                 <SectionTitle>Связаться</SectionTitle>
-                <FlexWrapper justify={'space-around'}>
+                <FlexWrapper justify={'space-around'} wrap={"wrap"}>
                     <Picture src={image} alt={'contact'}/>
                     <StyledForm>
                         <Field placeholder={'Ваша почта'}/>
@@ -37,6 +37,12 @@ const Picture = styled.img`
   width: 511px;
   height: 414px;
   object-fit: cover;
+  margin-bottom: 25px;
+  
+  @media ${theme.media.mobile} {
+    width: 280px;
+    height: 230px;
+  }
 `
 
 const StyledForm = styled.form`
