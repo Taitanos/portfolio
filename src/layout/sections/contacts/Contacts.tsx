@@ -13,11 +13,11 @@ export const Contacts: React.FC = () => {
                 <SectionTitle>Связаться</SectionTitle>
                 <FlexWrapper justify={'space-around'} wrap={"wrap"}>
                     <S.Picture src={image} alt={'contact'}/>
-                    <S.StyledForm>
+                    <S.Form>
                         <S.Field placeholder={'Ваша почта'}/>
                         <S.Field placeholder={'Ваш текст...'} as={'textarea'}/>
                         <Button type={'submit'}>Отправить</Button>
-                    </S.StyledForm>
+                    </S.Form>
                 </FlexWrapper>
             </Container>
         </S.Contacts>

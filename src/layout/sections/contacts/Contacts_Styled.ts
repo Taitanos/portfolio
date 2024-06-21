@@ -21,7 +21,7 @@ const Picture = styled.img`
   }
 `
 
-const StyledForm = styled.form`
+const Form = styled.form`
   max-width: 550px;
   width: 100%;
   display: flex;
@@ -58,6 +58,6 @@ const Field = styled.input`
 export const S = {
     Contacts,
     Picture,
-    StyledForm,
+    Form,
     Field,
 }

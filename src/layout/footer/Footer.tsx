@@ -2,6 +2,7 @@ import React from 'react';
 import {FlexWrapper} from '../../components/FlexWrapper';
 import {Icon} from '../../components/icon/Icon';
 import {S} from './Footer_Styles'
+import {Data} from '../../data/Data'
 
 export const Footer: React.FC = () => {
     return (
@@ -9,21 +10,17 @@ export const Footer: React.FC = () => {
             <FlexWrapper direction={'column'} align={'center'}>
                 <S.TextInfo>Мои социальные сети:</S.TextInfo>
                 <S.SocialList>
-                    <S.SocialItem>
-                        <S.SocialLink>
-                            <Icon iconId={'telegram'}/>
-                        </S.SocialLink>
-                    </S.SocialItem>
-                    <S.SocialItem>
-                        <S.SocialLink>
-                            <Icon iconId={'vk'}/>
-                        </S.SocialLink>
-                    </S.SocialItem>
-                    <S.SocialItem>
-                        <S.SocialLink>
-                            <Icon iconId={'linkedIn'}/>
-                        </S.SocialLink>
-                    </S.SocialItem>
+
+                    {Data.socialItemData.map((s, index) => {
+                       return (
+                           <S.SocialItem key={index}>
+                               <S.SocialLink>
+                                   <Icon iconId={s.iconId}/>
+                               </S.SocialLink>
+                           </S.SocialItem>
+                       )
+                        }
+                    )}
                 </S.SocialList>
             </FlexWrapper>
             <FlexWrapper direction={'column'}>
