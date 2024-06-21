@@ -4,9 +4,9 @@ import {SectionTitle} from '../../../components/SectionTitle';
 import {Project, ProjectPropsType} from './project/Project';
 import {Container} from '../../../components/Container';
 import {S} from './Projects_Styles'
-import {Data} from './../../../data/Data'
+import {Data} from '../../../data/Data'
 
-export const Projects = () => {
+export const Projects: React.FC = () => {
     return (
         <S.Projects>
             <Container>

@@ -6,7 +6,7 @@ import {Button} from '../../../components/Button';
 import {Container} from '../../../components/Container';
 import {S} from './Contacts_Styled'
 
-export const Contacts = () => {
+export const Contacts: React.FC = () => {
     return (
         <S.Contacts>
             <Container>

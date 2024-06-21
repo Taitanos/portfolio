@@ -5,9 +5,9 @@ import image from '../../../assets/images/skills.webp'
 import {SectionTitle} from '../../../components/SectionTitle';
 import {Container} from '../../../components/Container';
 import {S} from './Skills_Styles'
-import {Data} from './../../../data/Data'
+import {Data} from '../../../data/Data'
 
-export const Skills = () => {
+export const Skills: React.FC = () => {
     return (
         <S.Skills>
             <Container>

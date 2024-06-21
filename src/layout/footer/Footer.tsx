@@ -1,79 +1,38 @@
 import React from 'react';
-import styled from 'styled-components';
 import {FlexWrapper} from '../../components/FlexWrapper';
 import {Icon} from '../../components/icon/Icon';
-import {theme} from '../../styled/Theme';
+import {S} from './Footer_Styles'
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
     return (
-        <StyledFooter>
+        <S.Footer>
             <FlexWrapper direction={'column'} align={'center'}>
-                <TextInfo>Мои социальные сети:</TextInfo>
-                <SocialList>
-                    <SocialItem>
-                        <SocialLink>
+                <S.TextInfo>Мои социальные сети:</S.TextInfo>
+                <S.SocialList>
+                    <S.SocialItem>
+                        <S.SocialLink>
                             <Icon iconId={'telegram'}/>
-                        </SocialLink>
-                    </SocialItem>
-                    <SocialItem>
-                        <SocialLink>
+                        </S.SocialLink>
+                    </S.SocialItem>
+                    <S.SocialItem>
+                        <S.SocialLink>
                             <Icon iconId={'vk'}/>
-                        </SocialLink>
-                    </SocialItem>
-                    <SocialItem>
-                        <SocialLink>
+                        </S.SocialLink>
+                    </S.SocialItem>
+                    <S.SocialItem>
+                        <S.SocialLink>
                             <Icon iconId={'linkedIn'}/>
-                        </SocialLink>
-                    </SocialItem>
-                </SocialList>
+                        </S.SocialLink>
+                    </S.SocialItem>
+                </S.SocialList>
             </FlexWrapper>
             <FlexWrapper direction={'column'}>
-                <TextInfo>Больше проектов, над которыми я работал</TextInfo>
+                <S.TextInfo>Больше проектов, над которыми я работал</S.TextInfo>
                 <FlexWrapper align={'center'}>
-                    <Text> на github <a href={'https://github.com/Taitanos'}>@Taitanos</a></Text>
+                    <S.Text> на github <a href={'https://github.com/Taitanos'}>@Taitanos</a></S.Text>
                     <Icon iconId={'github'} viewBox={'0 0 31 35'}/>
                 </FlexWrapper>
             </FlexWrapper>
-        </StyledFooter>
+        </S.Footer>
     );
 };
-
-const StyledFooter = styled.footer`
-  padding: 40px 0;
-  background-color: ${theme.colors.secondaryBg};
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-`
-
-const TextInfo = styled.span`
-  color: ${theme.colors.fontText};
-`
-
-const Text = styled(TextInfo)`
-  padding: 15px;
-
-  a {
-    color: ${theme.colors.fontGit};
-  }
-`
-
-const SocialList = styled.ul`
-  display: flex;
-  justify-content: center;
-  gap: 25px
-`
-
-const SocialItem = styled.li`
-
-`
-
-const SocialLink = styled.a`
-    opacity: 0.5;
-  
-  &:hover {
-    opacity: 1;
-  }
-`
