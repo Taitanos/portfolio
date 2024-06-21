@@ -1,12 +1,12 @@
 import React from 'react';
 import {Logo} from '../../components/logo/Logo';
 import {Container} from '../../components/Container';
-import { FlexWrapper } from '../../components/FlexWrapper';
+import {FlexWrapper} from '../../components/FlexWrapper';
 import {DesktopMenu} from './headerMenu/desktopMenu/DesktopMenu';
 import {MobileMenu} from './headerMenu/mobileMenu/MobileMenu';
 import {S} from './Header_Styles';
 
-const items = ["Главная", 'Навыки', 'Проекты', 'Связаться']
+const items = ['Главная', 'Навыки', 'Проекты', 'Связаться']
 
 export const Header: React.FC = () => {
 
@@ -25,10 +25,9 @@ export const Header: React.FC = () => {
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'}>
                     <Logo/>
-                    {width < breakpoint ? <MobileMenu menuItems={items}/> : <DesktopMenu menuItems={items}/>                        }
+                    {width < breakpoint ? <MobileMenu menuItems={items}/> : <DesktopMenu menuItems={items}/>}
                 </FlexWrapper>
             </Container>
         </S.Header>
     );
 };
-

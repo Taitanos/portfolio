@@ -1,7 +1,7 @@
 import styled, {css} from 'styled-components';
 import {theme} from '../../../styled/Theme';
 
-//Menu styled
+// Menu styled
 
 const Link = styled.a`
   font-family: "Be Vietnam", sans-serif;
@@ -22,6 +22,7 @@ const Mask = styled.span`
 
   & + & {
     top: 50%;
+
     span {
       display: inline-block;
       transform: translateY(-50%);
@@ -30,14 +31,14 @@ const Mask = styled.span`
 `
 
 const MenuItem = styled.li`
-    position: relative;
-  
+  position: relative;
+
   &::before {
     content: '';
     display: inline-block;
     height: 2px;
     background-color: ${theme.colors.fontTextDark};
-    
+
     position: absolute;
     top: 50%;
     left: -10px;
@@ -46,13 +47,13 @@ const MenuItem = styled.li`
 
     transform: scale(0);
   }
-  
+
   &:hover {
 
     &::before {
       transform: scale(1);
     }
-    
+
     ${Mask} {
       transform: skewX(3deg) translateX(2px);
       color: ${theme.colors.fontTitle};
@@ -64,7 +65,7 @@ const MenuItem = styled.li`
   }
 `
 
-//Mobile styled
+// Mobile styled
 
 const MobileMenu = styled.nav`
   display: none;
@@ -90,7 +91,6 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     justify-content: center;
     align-items: center;
   `}
-  
   ul {
     display: flex;
     gap: 30px;
@@ -120,7 +120,6 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     ${props => props.isOpen && css<{ isOpen: boolean }>`
       background-color: rgba(255, 255, 255, 0);
     `}
-    
     &::before {
       content: '';
       display: block;
@@ -152,15 +151,15 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   }
 `
 
-//Desktop styled
+// Desktop styled
 
 const DesktopMenu = styled.nav`
-    ul {
-      display: flex;
-      gap: 30px;
-      justify-content: center;
-    }
-  
+  ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+
   @media ${theme.media.tablet} {
     display: none;
   }

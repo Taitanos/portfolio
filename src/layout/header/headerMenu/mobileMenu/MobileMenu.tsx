@@ -15,4 +15,3 @@ export const MobileMenu: React.FC<{ menuItems: Array<string> }> = (props: { menu
         </S.MobileMenu>
     );
 };
-
