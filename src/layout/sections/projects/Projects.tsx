@@ -1,39 +1,29 @@
 import React from 'react';
-import styled from 'styled-components';
 import {FlexWrapper} from '../../../components/FlexWrapper';
 import {SectionTitle} from '../../../components/SectionTitle';
-import {Project} from './project/Project';
+import {Project, ProjectPropsType} from './project/Project';
 import ProjectImg from './../../../assets/images/project.webp'
 import {Container} from '../../../components/Container';
-import {theme} from '../../../styled/Theme';
+import {S} from './Projects_Styles'
+
+const ProjectData: ProjectPropsType[] = [
+    {title:'Social Network', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.', src: ProjectImg},
+    {title:'Fast Company', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.', src: ProjectImg},
+    {title:'Counter', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.', src: ProjectImg},
+    {title:'TodoList', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.', src: ProjectImg},
+]
 
 export const Projects = () => {
     return (
-        <StyledProjects>
+        <S.Projects>
             <Container>
                 <SectionTitle>Проекты</SectionTitle>
                 <FlexWrapper justify={'space-around'} wrap={'wrap'} align={'flex-start'}>
-                    <Project title={'Social Network'}
-                             text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}
-                             src={ProjectImg}/>
-                    <Project title={'Fast Company'}
-                             text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}
-                             src={ProjectImg}/>
-                    <Project title={'Counter'}
-                             text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}
-                             src={ProjectImg}/>
-                    <Project title={'TodoList'}
-                             text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}
-                             src={ProjectImg}/>
+                    {ProjectData.map((p: ProjectPropsType, index) => (
+                        <Project key={index} title={p.title} text={p.text} src={p.src}/>
+                    ))}
                 </FlexWrapper>
             </Container>
-        </StyledProjects>
+        </S.Projects>
     );
 };
-
-const StyledProjects = styled.section`
-  background-color: ${theme.colors.secondaryBg};
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`

@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import {theme} from '../../../styled/Theme';
 
+// Skills Styled
+
 const Skills = styled.section`
   background-color: ${theme.colors.primaryBg};
   display: flex;
@@ -33,6 +35,8 @@ const Picture = styled.img`
     height: 230px;
   }
 `
+
+// Skill Styled
 
 const Skill = styled.div`
   display: flex;
