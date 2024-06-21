@@ -1,9 +1,8 @@
 import React from 'react';
 import {Icon} from '../../../../components/icon/Icon';
-import styled from 'styled-components';
-import {theme} from '../../../../styled/Theme';
+import {S} from '../Skills_Styles'
 
-type SkillPropsType = {
+export type SkillPropsType = {
     iconId: string
     titleId: string
     width?: string
@@ -11,48 +10,13 @@ type SkillPropsType = {
     viewBox?: string
 }
 
-export const Skill = (props: SkillPropsType) => {
+export const Skill: React.FC<SkillPropsType> = (props: SkillPropsType) => {
     return (
-        <StyledSkill>
-            <IconWrapper>
+        <S.Skill>
+            <S.IconWrapper>
                 <Icon iconId={props.iconId} viewBox={props.viewBox}/>
-            </IconWrapper>
-            <SkillTitle>{props.titleId}</SkillTitle>
-        </StyledSkill>
+            </S.IconWrapper>
+            <S.SkillTitle>{props.titleId}</S.SkillTitle>
+        </S.Skill>
     );
 };
-
-const StyledSkill = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 160px;
-  padding: 15px;
-`
-
-const IconWrapper = styled.div`
-  position: relative;
-
-  &::before {
-    content: '';
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    background-image: linear-gradient(270deg, rgba(79, 71, 200, 0.15), rgba(29, 213, 208, 0.15));
-    transform: rotate(45deg) translate(-50%, -50%);
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform-origin: top left;
-  }
-`
-
-const SkillTitle = styled.h3`
-  font-family: "Be Vietnam", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  text-align: center;
-  color: ${theme.colors.fontTextDark};
-  margin: 25px 0 5px;
-`
