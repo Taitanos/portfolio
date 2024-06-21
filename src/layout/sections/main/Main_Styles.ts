@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {theme} from '../../../styled/Theme';
 import {font} from '../../../styled/Common';
 
-const StyledMain = styled.section`
+const Main = styled.section`
   min-height: 100vh;
   background-color: ${theme.colors.primaryBg};
   display: flex;
@@ -95,7 +95,7 @@ const Name = styled.h2`
 `
 
 export const S = {
-    StyledMain,
+    Main,
     PhotoWrapper,
     Photo,
     InfoWrapper,

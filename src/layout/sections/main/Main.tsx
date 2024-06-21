@@ -8,7 +8,7 @@ import {S} from './Main_Styles'
 
 export const Main: React.FC = () => {
     return (
-        <S.StyledMain>
+        <S.Main>
             <Container>
                 <FlexWrapper align={'center'} justify={'space-around'} wrap={'wrap-reverse'}>
                     <S.InfoWrapper>
@@ -34,6 +34,6 @@ export const Main: React.FC = () => {
                     </S.PhotoWrapper>
                 </FlexWrapper>
             </Container>
-        </S.StyledMain>
+        </S.Main>
     );
 };
