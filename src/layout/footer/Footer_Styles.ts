@@ -9,6 +9,7 @@ const Footer = styled.footer`
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
 `
 
 const TextInfo = styled.span`

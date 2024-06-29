@@ -8,6 +8,7 @@ const Projects = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 `
 
 // Project Styles

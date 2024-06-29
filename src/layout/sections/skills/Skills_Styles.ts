@@ -8,6 +8,7 @@ const Skills = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 `
 
 const Description = styled.span`

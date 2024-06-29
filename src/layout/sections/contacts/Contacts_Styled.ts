@@ -7,6 +7,7 @@ const Contacts = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 45px;
+  position: relative;
 `
 
 const Picture = styled.img`
