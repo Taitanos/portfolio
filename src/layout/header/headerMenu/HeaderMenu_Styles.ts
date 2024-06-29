@@ -18,7 +18,7 @@ const Mask = styled.span`
   display: inline-block;
   height: 50%;
   overflow-y: hidden;
-  color: ${theme.colors.fontTextDark};
+  color: ${theme.colors.secondaryBg};
 
   & + & {
     top: 50%;
@@ -82,7 +82,7 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   bottom: 0;
   left: 0;
   z-index: 99999;
-  background-color: rgba(131, 131, 131, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
 
   display: none;
 
