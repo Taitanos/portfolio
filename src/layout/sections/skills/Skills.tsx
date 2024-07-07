@@ -9,7 +9,7 @@ import {Data} from '../../../data/Data'
 
 export const Skills: React.FC = () => {
     return (
-        <S.Skills>
+        <S.Skills id={'skills'}>
             <Container>
                 <SectionTitle>Навыки</SectionTitle>
                 <FlexWrapper align={'center'} justify={'space-around'} wrap={'wrap-reverse'}>

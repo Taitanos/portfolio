@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import {theme} from '../../styled/Theme';
 
 const Footer = styled.footer`
-  padding: 40px 0;
+  padding: 75px 0;
+  gap: 25px;
   background-color: ${theme.colors.secondaryBg};
   display: flex;
   flex-direction: row;

@@ -8,6 +8,7 @@ const Contacts = styled.section`
   align-items: center;
   gap: 45px;
   position: relative;
+  padding-bottom: 230px;
 `
 
 const Picture = styled.img`
