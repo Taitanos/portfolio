@@ -23,7 +23,7 @@ export const GlobalStyled = createGlobalStyle`
   }
   
   section {
-    padding: 200px 0;
+    padding: 110px 0;
 
     @media ${theme.media.mobile} {
       padding: 105px 0

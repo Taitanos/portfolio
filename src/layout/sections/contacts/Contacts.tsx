@@ -10,7 +10,7 @@ export const Contacts: React.FC = () => {
     return (
         <S.Contacts id={'contact'}>
             <Container>
-                <SectionTitle>Связаться</SectionTitle>
+                <SectionTitle>Для связи</SectionTitle>
                 <FlexWrapper justify={'space-around'} wrap={'wrap'}>
                     <S.Picture src={image} alt={'contact'}/>
                     <S.Form>

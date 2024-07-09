@@ -5,7 +5,7 @@ const items = [
     {href: 'main', title: 'Главная'},
     {href: 'skills', title: 'Навыки'},
     {href: 'projects', title: 'Проекты'},
-    {href: 'contact', title: 'Связаться'},
+    {href: 'contact', title: 'Для связи'},
 ]
 
 export const Menu: React.FC = () => {
