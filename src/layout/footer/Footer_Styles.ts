@@ -2,13 +2,15 @@ import styled from 'styled-components';
 import {theme} from '../../styled/Theme';
 
 const Footer = styled.footer`
-  padding: 40px 0;
+  padding: 65px 0;
+  gap: 25px;
   background-color: ${theme.colors.secondaryBg};
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
 `
 
 const TextInfo = styled.span`
@@ -34,8 +36,9 @@ const SocialItem = styled.li`
 `
 
 const SocialLink = styled.a`
-    opacity: 0.5;
-  
+  opacity: 0.5;
+  transition: ${theme.animations.transition};
+
   &:hover {
     opacity: 1;
   }

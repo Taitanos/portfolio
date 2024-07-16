@@ -8,10 +8,10 @@ import {S} from './Contacts_Styled'
 
 export const Contacts: React.FC = () => {
     return (
-        <S.Contacts>
+        <S.Contacts id={'contact'}>
             <Container>
-                <SectionTitle>Связаться</SectionTitle>
-                <FlexWrapper justify={'space-around'} wrap={"wrap"}>
+                <SectionTitle>Для связи</SectionTitle>
+                <FlexWrapper justify={'space-around'} wrap={'wrap'}>
                     <S.Picture src={image} alt={'contact'}/>
                     <S.Form>
                         <S.Field placeholder={'Ваша почта'}/>

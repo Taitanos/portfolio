@@ -8,7 +8,7 @@ import {Data} from '../../../data/Data'
 
 export const Projects: React.FC = () => {
     return (
-        <S.Projects>
+        <S.Projects id={'projects'}>
             <Container>
                 <SectionTitle>Проекты</SectionTitle>
                 <FlexWrapper justify={'space-around'} wrap={'wrap'} align={'flex-start'}>
