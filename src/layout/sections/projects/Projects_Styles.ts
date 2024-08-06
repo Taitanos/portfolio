@@ -46,6 +46,10 @@ const Text = styled.p`
   line-height: 1.4;
 `
 
+const Links = styled.a`
+    text-decoration: none;
+`
+
 export const S = {
     Projects,
     Project,
@@ -53,4 +57,5 @@ export const S = {
     Description,
     Title,
     Text,
+    Links,
 }

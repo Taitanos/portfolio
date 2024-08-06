@@ -6,6 +6,7 @@ export type ProjectPropsType = {
     title: string
     text: string
     src: string
+    link: string
 }
 
 export const Project: React.FC<ProjectPropsType> = (props: ProjectPropsType) => {
@@ -15,7 +16,7 @@ export const Project: React.FC<ProjectPropsType> = (props: ProjectPropsType) => 
             <S.Description>
                 <S.Title>{props.title}</S.Title>
                 <S.Text>{props.text}</S.Text>
-                <Button>Посмотреть проект</Button>
+                <S.Links href={props.link} target={'_blank'}><Button>Посмотреть проект</Button></S.Links>
             </S.Description>
         </S.Project>
     );

@@ -13,7 +13,7 @@ export const Projects: React.FC = () => {
                 <SectionTitle>Проекты</SectionTitle>
                 <FlexWrapper justify={'space-around'} wrap={'wrap'} align={'flex-start'}>
                     {Data.projectData.map((p: ProjectPropsType, index) => (
-                            <Project key={index} title={p.title} text={p.text} src={p.src}/>
+                            <Project key={index} title={p.title} text={p.text} src={p.src} link={p.link}/>
                         )
                     )}
                 </FlexWrapper>
