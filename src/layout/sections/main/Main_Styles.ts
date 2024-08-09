@@ -94,6 +94,10 @@ const Name = styled.h2`
   }
 `
 
+const Links = styled.a`
+    text-decoration: none;
+`
+
 export const S = {
     Main,
     PhotoWrapper,
@@ -102,4 +106,5 @@ export const S = {
     MainTitle,
     Description,
     Name,
+    Links,
 }
