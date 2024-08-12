@@ -49,9 +49,9 @@ const projectData: ProjectPropsType[] = [
 ]
 
 const socialItemData = [
-    {iconId: 'telegram'},
-    {iconId: 'vk'},
-    {iconId: 'linkedIn'},
+    {iconId: 'telegram', link: 'https://t.me/Taitanos'},
+    {iconId: 'vk', link: 'https://vk.com/taitanos'},
+    {iconId: 'linkedIn', link: 'https://www.linkedin.com/in/nikolay-tukarev/'},
 ]
 
 export const Data = {
