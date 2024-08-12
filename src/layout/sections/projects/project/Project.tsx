@@ -5,7 +5,9 @@ import {S} from '../Projects_Styles'
 export type ProjectPropsType = {
     title: string
     text: string
+    stack: string
     src: string
+    link: string
 }
 
 export const Project: React.FC<ProjectPropsType> = (props: ProjectPropsType) => {
@@ -14,8 +16,9 @@ export const Project: React.FC<ProjectPropsType> = (props: ProjectPropsType) => 
             <S.Image src={props.src} alt=""/>
             <S.Description>
                 <S.Title>{props.title}</S.Title>
+                <S.Text>{props.stack}</S.Text>
                 <S.Text>{props.text}</S.Text>
-                <Button>Посмотреть проект</Button>
+                <S.Links href={props.link} target={'_blank'}><Button>Посмотреть проект</Button></S.Links>
             </S.Description>
         </S.Project>
     );

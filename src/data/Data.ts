@@ -18,16 +18,40 @@ const skillData: SkillPropsType[] = [
 ]
 
 const projectData: ProjectPropsType[] = [
-    {title:'Social Network', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.', src: ProjectImg},
-    {title:'Fast Company', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.', src: ProjectImg},
-    {title:'Counter', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.', src: ProjectImg},
-    {title:'TodoList', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.', src: ProjectImg},
+    {
+        title:'Fast Company',
+        stack: 'Технологии: TypeScript/JavaScript, React, Bootstrap',
+        text:'Проект представляет собой приложение для быстрого поиска на вечер по своим интересам, в приложении можно как найти друзей так и компанию на вечер',
+        src: ProjectImg,
+        link: 'https://taitanos.github.io/fast-company'
+    },
+    {
+        title:'Counter',
+        stack: 'Технологии: TypeScript/JavaScript, React, CSS',
+        text:'Данный проект является обычным счетсчиком и секундомером, в счетчике можно указывать начальное значение и конечное значение по достижению которого счетчик приостанавливается',
+        src: ProjectImg,
+        link: 'https://taitanos.github.io/counter/'
+    },
+    {
+        title:'Social Network',
+        stack: 'Технологии: JavaScript, React, Redux, RestApi, CSS',
+        text:'Приложение представляет собой социальную сеть, в которой можно общаться со своими друзьями, делиться интересными постами и фотографиями',
+        src: ProjectImg,
+        link: 'https://github.com/Taitanos/socialnetwork-js'
+    },
+    {
+        title:'TodoList',
+        stack: 'Технологии: TypeScript/JavaScript, React, Redux, MaterialUI',
+        text:'Приложение для создания заметок и задач, которое поможет упростить жизнь и не забыть о важных делах которые необходимо сделать',
+        src: ProjectImg,
+        link: 'https://github.com/Taitanos/todolist-ts'
+    },
 ]
 
 const socialItemData = [
-    {iconId: 'telegram'},
-    {iconId: 'vk'},
-    {iconId: 'linkedIn'},
+    {iconId: 'telegram', link: 'https://t.me/Taitanos'},
+    {iconId: 'vk', link: 'https://vk.com/taitanos'},
+    {iconId: 'linkedIn', link: 'https://www.linkedin.com/in/nikolay-tukarev/'},
 ]
 
 export const Data = {

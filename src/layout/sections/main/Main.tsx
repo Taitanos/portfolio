@@ -31,7 +31,7 @@ export const Main: React.FC = () => {
                             </S.Description>
                         </div>
                         <div>
-                            <Button>Загрузить CV</Button>
+                            <S.Links href={'https://drive.google.com/file/d/1TMVmdOT8QMqMH8ibk3ApbJ6TSmao5CKm/view?usp=sharing'} target={'_blank'}><Button>Посмотреть CV</Button></S.Links>
                         </div>
                     </S.InfoWrapper>
 
